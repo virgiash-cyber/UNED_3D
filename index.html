@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <title>Modelo 3D UNED</title>
+
+  <!-- X3DOM -->
+  <script type="text/javascript" src="https://www.x3dom.org/release/x3dom.js"></script>
+  <link rel="stylesheet" type="text/css" href="https://www.x3dom.org/release/x3dom.css"/>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      background-color: #f5f5f5;
+      margin: 0;
+      padding: 20px;
+    }
+    h1 {
+      margin-bottom: 10px;
+    }
+    x3d {
+      border: 1px solid #ccc;
+      width: 800px;
+      height: 600px;
+      background-color: #ffffff;
+    }
+    p {
+      margin-top: 10px;
+      color: #555;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Modelo 3D — Práctica UNED</h1>
+
+  <x3d showStat="false" showNavigation="true">
+    <scene>
+      <Viewpoint description="Vista inicial" position="0 0 3"></Viewpoint>
+      <inline url="the-map-of-the-world-tablet_tex.x3d"></inline>
+    </scene>
+  </x3d>
+
+  <p>Puedes rotar el modelo con el ratón, hacer zoom con la rueda y desplazar con el botón central.</p>
+
+</body>
+</html>
